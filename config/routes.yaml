@@ -1,5 +1,6 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+# config/routes.yaml
+
+# setting path to "/" for Bicycle Controller to make it easy to access
+bicycle:
+    path: /
+    controller: App\Controller\BicycleController::index

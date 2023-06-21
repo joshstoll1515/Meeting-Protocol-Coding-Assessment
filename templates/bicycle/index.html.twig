@@ -1,0 +1,20 @@
+{# templates/bicycle/index.html.twig #}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bicycle</title>
+</head>
+<body>
+    <h1>Bicycle Information</h1>
+    <ul>
+        <li><strong>Brand:</strong> {{ brand }}</li>
+        <li><strong>Color:</strong> {{ color }}</li>
+        <li><strong>Value:</strong> ${{ value }}</li>
+        <li><strong>Status:</strong> {% if isRunning %}Running{% else %}Stopped{% endif %}</li>
+        {% if error %}
+            <li><strong>Error:</strong> {{ error }}</li>
+        {% endif %}
+    </ul>
+</body>
+</html>
